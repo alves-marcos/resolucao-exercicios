@@ -31,3 +31,7 @@
 13 - Peça um número N e imprima todos os números de 1 até N.
 
 14 - Peça um número N e mostre apenas os números pares de 1 até N
+
+🔴 NÍVEL 4 – Loop dentro de loop
+
+15- Faça um quadrado 5x5 usando * assim:
