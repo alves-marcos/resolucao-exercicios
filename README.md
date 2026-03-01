@@ -3,3 +3,5 @@ Bem-vindo a este repositório! Aqui você encontrará soluções para desafios d
 
 # Acrescentei a este repositório exercícios
 Os exercícios que foram acrescentados se tratam de Loops, os quais estou utilizando para reforçar minha lógica de programação.
+
+# Visando melhorar minha lógica de programação, acrescentei exercícios sobre arrays !
