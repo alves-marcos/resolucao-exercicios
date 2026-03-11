@@ -2,7 +2,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ex1005 {
+public class ex1006 {
 
 	public static void main(String[] args) throws IOException {
 
