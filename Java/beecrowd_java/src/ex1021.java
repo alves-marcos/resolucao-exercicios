@@ -5,63 +5,48 @@ public class ex1021 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-
-        double valor;
-
         Scanner sc = new Scanner(System.in);
-        valor = sc.nextDouble();
+
+        int valor = (int) Math.round(sc.nextDouble() * 100);
+
         System.out.println("NOTAS:");
 
-        double valor100 = valor / 100;
-        System.out.println((int)valor100 + " nota(s) de R$ 100.00");
-        double resto100 = valor % 100;
+        System.out.println(valor / 10000 + " nota(s) de R$ 100.00");
+        valor %= 10000;
 
-        double valor50 = resto100 / 50;
-        System.out.println((int)valor50 + " nota(s) de R$ 50.00");
-        double resto50 = resto100 % 50;
+        System.out.println(valor / 5000 + " nota(s) de R$ 50.00");
+        valor %= 5000;
 
-        double valor20 = resto50 / 20;
-        System.out.println((int)valor20 + " nota(s) de R$ 20.00");
-        double resto20 = resto50 % 20;
+        System.out.println(valor / 2000 + " nota(s) de R$ 20.00");
+        valor %= 2000;
 
-        double valor10 = resto20 / 10;
-        System.out.println((int)valor10 + " nota(s) de R$ 10.00");
-        double resto10 = resto20 % 10;
+        System.out.println(valor / 1000 + " nota(s) de R$ 10.00");
+        valor %= 1000;
 
-        double valor5 = resto10 / 5;
-        System.out.println((int)valor5 + " nota(s) de R$ 5.00");
-        double resto5 = resto10 % 5;
+        System.out.println(valor / 500 + " nota(s) de R$ 5.00");
+        valor %= 500;
 
-        double valor2 = resto5 / 2;
-        System.out.println((int)valor2 + " nota(s) de R$ 2.00");
-        double resto2 = resto5 % 2;
-        resto2 = Math.round(resto2 * 100.0) / 100.0;
+        System.out.println(valor / 200 + " nota(s) de R$ 2.00");
+        valor %= 200;
 
         System.out.println("MOEDAS:");
 
-        double moeda1 = resto2 / 1;
-        System.out.println((int)moeda1 + " moeda(s) de R$ 1.00");
-        double restoMoeda1 = resto2 % 1;
+        System.out.println(valor / 100 + " moeda(s) de R$ 1.00");
+        valor %= 100;
 
-        double moeda050 = restoMoeda1 / 0.50;
-        System.out.println((int)moeda050 + " moeda(s) de R$ 0.50");
-        double resto050 = restoMoeda1 % 0.50;
+        System.out.println(valor / 50 + " moeda(s) de R$ 0.50");
+        valor %= 50;
 
-        double moeda025 = resto050 / 0.25;
-        System.out.println((int)moeda025 + " moeda(s) de R$ 0.25");
-        double resto025 = resto050 % 0.25;
+        System.out.println(valor / 25 + " moeda(s) de R$ 0.25");
+        valor %= 25;
 
-        double moeda010 = resto025 / 0.10;
-        System.out.println((int)moeda010 + " moeda(s) de R$ 0.10");
-        double resto010 = resto025 % 0.10;
+        System.out.println(valor / 10 + " moeda(s) de R$ 0.10");
+        valor %= 10;
 
-        double moeda005 = resto010 / 0.05;
-        System.out.println((int)moeda005 + " moeda(s) de R$ 0.05");
-        double resto005 = resto010 % 0.05;
+        System.out.println(valor / 5 + " moeda(s) de R$ 0.05");
+        valor %= 5;
 
-        double moeda001 = resto005 / 0.01;
-        System.out.println((int)moeda001 + " moeda(s) de R$ 0.01");
-
+        System.out.println(valor / 1 + " moeda(s) de R$ 0.01");
 
         sc.close();
     }
