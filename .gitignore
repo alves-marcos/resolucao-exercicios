@@ -1,0 +1,17 @@
+# IDEs (IntelliJ e Eclipse)
+.idea/
+*.iml
+.metadata/
+.settings/
+.project/
+.classpath/
+
+# Compilação e Build
+out/
+bin/
+target/
+*.class
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
