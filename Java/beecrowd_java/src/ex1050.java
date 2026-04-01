@@ -32,7 +32,9 @@ public class ex1050 {
             case 31:
                 System.out.println("Belo Horizonte");
                 break;
-
+            default:
+                System.out.println("DDD nao cadastrado");
+                break;
         }
 
         sc.close();
